@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name        TypeRacer Responsive Dark Theme
+@name        Lachney's Customizible Theme
 @description Saving you energy and strain on your eyes!
 @namespace   Lachney
 @version     2.0.0
-@homepageURL https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme
+@homepageURL https://github.com/Lachney/Lachney-TR-Theme
 @updateURL   https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/css/responsive-dark.user.css
 @license     CC-BY-SA-4.0
 @author      Lachney
@@ -13,14 +13,15 @@
 
 /* Change the color values to customize */
 :root {
-    --main-btn-color: #0784B5 !important;
+    --main-btn-color: #998290 !important;
     --color-primary: #111 !important;
     --color-secondary: #222 !important;
     --color-borders: #333 !important;
-    --color-accent: #39ACE7 !important;
+    --color-accent: #998290 !important;
     --color-font: #eee !important;
-/*     --track-font-family: 'Ubuntu Mono', monospace; */
-    --track-font-family: 'Lato';
+    --track-font-family: monospace;
+    --track-font-size: 20px;
+    --banner: url(https://xjon.me/assets/Louisiana_cypress_tree_header.webp)
 }
 
 /* Hide sidebar universes?  */
@@ -72,10 +73,14 @@
         color: var(--color-font) !important;
     }
 
-    .mainMenu .enterRace {
+    .enterRace {
+        background-image: var(--banner)!important;
+        background-color: rgba(0, 0, 0, 0.6) !important;
+        background-blend-mode: darken;
         background-color: var(--color-secondary);
-        background-image: url("https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/blob/master/assets/night.png?raw=true") !important;
-        background-size: cover;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
         border: var(--color-borders) 1px solid;
         border-radius: 8px;
     }
@@ -190,7 +195,7 @@
     }
     table.inputPanel div {
         font-family: var(--track-font-family);
-        font-size: 1.15em;
+        font-size: var(--track-font-size);
     }
     .mainViewport table.inputPanel {
         border: none;
@@ -391,7 +396,7 @@
     /* Fix premium/adblock no center issue */
     #dUI > table > tbody > tr:nth-child(2) > td:nth-child(1) {
         display: block !important;
-        width: 260px;
+        width: 300px;
     }
     
     /*   Override Redesign   */
@@ -404,6 +409,7 @@
 
     a[class*="gwt-Anchor"] {
      color: var(--color-accent) !important;
+     animation: colorRotate 6s linear 0s infinite;
     }
     a[href*="javascript:void(0);"] {
      color: var(--color-accent) !important;
@@ -431,4 +437,7 @@
         content: "—————————————————— Lachney's Theme v2.0.0";
         filter: brightness(40%);
     }
+    
+    
+/*   Extras   */
 }
