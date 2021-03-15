@@ -1,0 +1,434 @@
+/* ==UserStyle==
+@name        TypeRacer Responsive Dark Theme
+@description Saving you energy and strain on your eyes!
+@namespace   Lachney
+@version     2.0.0
+@homepageURL https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme
+@updateURL   https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/css/responsive-dark.user.css
+@license     CC-BY-SA-4.0
+@author      Lachney
+==/UserStyle== */
+
+/* Settings */
+
+/* Change the color values to customize */
+:root {
+    --main-btn-color: #0784B5 !important;
+    --color-primary: #111 !important;
+    --color-secondary: #222 !important;
+    --color-borders: #333 !important;
+    --color-accent: #39ACE7 !important;
+    --color-font: #eee !important;
+/*     --track-font-family: 'Ubuntu Mono', monospace; */
+    --track-font-family: 'Lato';
+}
+
+/* Hide sidebar universes?  */
+.newEastWidget > .sidebarBlocks {
+    display: none;
+}
+
+/* Hide Featured Universes? */
+.mainViewportHolder > .sidebarBlocks {
+    display: none;
+}
+@-moz-document domain("play.typeracer.com"), domain("data.typeracer.com") {
+    /* ubuntu-mono-regular - greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext */
+    @font-face {
+        font-family: 'Ubuntu Mono';
+        font-style: normal;
+        font-weight: 400;
+        src: url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.eot');
+        /* IE9 Compat Modes */
+        src: local('Ubuntu Mono'), local('UbuntuMono-Regular'),
+        url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
+        url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.woff') format('woff'), /* Modern Browsers */
+        url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../fonts/ubuntu-mono-v8-greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext-regular.svg#UbuntuMono') format('svg');
+        /* Legacy iOS */
+    }
+
+    .main, .container {
+        background: var(--color-primary);
+    }
+
+    body, html, p, b, strong {
+        color: var(--color-font) !important;
+    }
+
+    h1, h2, h3, h4, h5, li, .gameStatusLabel, .scoreboard, .row, .progressBar, .avatar, .lblName, .lblUsername, .rank {
+        color: var(--color-font) !important;
+    }
+    
+    .navigation > a {
+        color: var(--color-font) !important; 
+    }
+    
+    .themeHeader#themeHeader {
+        background: var(--color-secondary);
+    }
+    #tr_textHeader {
+        color: var(--color-font) !important;
+    }
+
+    .mainMenu .enterRace {
+        background-color: var(--color-secondary);
+        background-image: url("https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/blob/master/assets/night.png?raw=true") !important;
+        background-size: cover;
+        border: var(--color-borders) 1px solid;
+        border-radius: 8px;
+    }
+
+
+    .bkgnd-yellow, .bkgnd-blue, .bkgnd-purple, .bkgnd-green {
+        transition: all 175ms;
+    }
+    .enterRace h2, h3 {
+        color: var(--color-font) !important;
+    }
+    .mainMenu .practice {
+        background-color: var(--color-primary) !important;
+        color: var(--color-font) !important;
+        border-color: var(--color-borders);
+    }
+    .mainMenu .friends {
+        background-color: var(--color-primary) !important;
+        color: var(--color-font) !important;
+        border-color: var(--color-borders);
+    }
+    .statsView {
+        background-image: none;
+        background-color: var(--color-secondary);
+        color: var(--color-font) !important;
+        background-size: cover;
+        border: var(--color-borders) 1px solid;
+        border-radius: 8px;
+    }
+    .StatsTable table tr.headerRow td, .section--boxed {
+        background-color: var(--color-borders) !important;
+        border: 1px solid var(--color-borders);
+    }
+
+    table.themeHeader table.mainUserInfoBox > tbody > tr > td {
+        border-color: var(--color-borders);
+    }
+
+    table.themeHeader table.mainUserInfoBox > tbody > tr:first-child {
+        background-color: #444;
+        border-color: var(--color-borders);
+    }
+
+    table.themeHeader table.mainUserInfoBox > tbody > tr.datarow {
+        border-color: var(--color-borders);
+        background-color: var(--color-borders)
+    }
+
+    table.themeHeader table.mainUserInfoBox {
+        border: none;
+    }
+
+    .OptionsWidget .OptionsWidgetBody li:nth-child(2) .gwt-Anchor.off {
+        background: var(--color-primary);
+        border-color: var(--color-borders);
+    }
+
+    #tstats > table > tbody > tr > td {
+        color: var(--color-font) !important;
+    }
+
+    .mobileNav {
+        background: var(--color-secondary);
+        color: var(--color-font);
+    }
+    .mobileNav a {
+        color: var(--color-font);
+    }
+    .mobileNav a:hover {
+        color: var(--color-font);
+        background: var(--color-borders);
+    }
+    .mobileMenu li + li {
+        border-top: #555 1px solid
+    }
+
+    #tr_textHeader {
+        margin: 0 auto;
+        text-align: center !important;
+        padding-bottom: 20px
+    }
+
+    table.themeHeader {
+        background: var(--color-primary);
+        position: relative;
+    }
+
+    #school-edition-promo {
+        background-image: none;
+        background-color: var(--color-secondary);
+        color: var(--color-font) !important;
+        background-size: cover;
+        border: var(--color-borders) 1px solid;
+        border-radius: 8px;
+        max-width: 1200px !important;
+    }
+    
+    .popupContent span {
+        color: var(--color-font) !important;
+    }
+    #school-edition-promo ul li {
+        background-image: url("https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/blob/master/assets/arrow.png?raw=true");
+        background-position: 0px 7px;
+    }
+    .StatsTable table tr td {
+        background: var(--color-secondary) !important;
+        color: var(--color-font);
+        border: 1px solid var(--color-borders);
+    }
+    .horizontalCountdownPopup .lightLabel .countdownPopup {
+        background-color: var(--color-secondary) !important;
+    }
+    table.inputPanel div {
+        font-family: var(--track-font-family);
+        font-size: 1.15em;
+    }
+    .mainViewport table.inputPanel {
+        border: none;
+    }
+    .mainViewport table.scoreboard > tbody > tr table tr td:nth-child(2) .rankPanelWpm {
+        color: var(--color-font) !important;
+    }
+    .chrome_1, .chrome_m, .chrome_r, .mainViewport, table.inputPanel, .roomSection, .messagesPanel, .users-list, .AdvancedTextBox, .txtChatMsgInput, .AdvancedTextBox-unfocused {
+        background-color: var(--color-secondary) !important;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .messagesPanel, .users-list, .AdvancedTextBox, .txtChatMsgInput, .AdvancedTextBox-unfocused {
+        border: 1px solid var(--color-borders) !important;
+    }
+    #dUI > table > tbody > tr > td:nth-child(1) > div > div.mainViewport > table > tbody > tr:nth-child(4) > td > div {
+        border: none;
+    }
+    .txtInput {
+        background-color: var(--color-secondary) !important;
+        color: var(--color-font) !important;
+    }
+    table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) {
+        width: 200px !important;
+    }
+    table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) > div img {
+        width: 100%;
+    }
+    .popupContent, .DialogBox, .PlayerInfoPopup, .trPopupDialog, .gwt-MenuBar, .textInfoHeader, .mainViewport table.textInfoView > tbody > tr:nth-child(3) td {
+        background-color: var(--color-secondary) !important;
+        color: var(--color-font) !important;
+    }
+    .textInfoHeader, .mainViewport table.textInfoView {
+        border: 1px solid var(--color-borders);
+    }
+    .gwt-MenuItem:hover {
+        background-color: #444 !important;
+        transition: all 75ms;
+    }
+    .DialogBox.trPopupDialog {
+        -webkit-box-shadow: 1px 2px 7px var(--color-font);
+        box-shadow: 1px 2px 7px var(--color-font);
+    }
+    .AdContainer, .AdContainer-728x90 {
+        background-color: var(--color-secondary) !important;
+        color: var(--color-font) !important;
+        border: none !important;
+    }
+
+    .OptionsWidget, .eastWidget {
+        background-color: var(--color-secondary) !important;
+        color: var(--color-font) !important;
+        border: none !important;
+    }
+
+    .gwt-InlineLabel {
+        color: var(--color-font) !important;
+    }
+
+    .DialogBox.trPopupDialog .gwt-DisclosurePanel.gwt-DisclosurePanel-open, .gwt-DisclosurePanel, .gwt-DisclosurePanel-closed {
+        background-color: var(--color-secondary) !important;
+        color: var(--color-font) !important;
+        border: 1px solid var(--color-borders);
+    }
+
+    .sidebarBlocks-controls p {
+        color: var(--color-font);
+    }
+
+    .sidebarBlocks, .mainViewportHolder .sidebarBlocks iframe {
+        background-color: var(--color-primary);
+        border-color: var(--color-borders);
+    }
+    .sidebarBlock show, .sidebarBlock__content, .sidebarBlocks-prev, .sidebarBlocks-next {
+        background: var(--color-secondary) !important;
+        border-color: var(--color-borders);
+    }
+
+    .sidebarBlock__subtext {
+        background: var(--color-borders) !important;
+    }
+
+    .statsView .tab-bar-select select {
+        background: var(--color-secondary) !important;
+        border-color: var(--color-borders);
+    }
+
+    /*  Buttons */
+    .prompt-button.bkgnd-green, .prompt-button.bkgnd-blue, .prompt-button.bkgnd-yellow, .prompt-button.bkgnd-purple, .highScoresFooter .lnkRefresh, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.My_Scores, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Latest_High_Scores, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Hall_of_Fame, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Competitions, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink, .mainViewport table.textInfoView > tbody > tr .tblOwnStats .ScoreMenuButton > tbody > tr {
+        transition: all 175ms;
+        background-color: var(--main-btn-color);
+        filter: brightness(90%);
+        color: #eee !important;
+    }
+
+    .prompt-button.bkgnd-green:hover, .prompt-button.bkgnd-blue:hover, .prompt-button.bkgnd-yellow:hover, .prompt-button.bkgnd-purple:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .lnkRefresh:hover, .gwt-TabBarItem>.gwt-Label.My_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Latest_High_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Hall_of_Fame:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Competitions:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .mainViewport table.textInfoView > tbody > tr .tblOwnStats .ScoreMenuButton > tbody > tr:hover {
+        background-color: var(--main-btn-color) !important;
+        filter: brightness(110%) !important;
+    }
+
+    /*  End of Buttons    */
+
+    .headerSubmenu {
+        background-color: var(--color-borders);
+    }
+
+    #footer {
+        background: var(--color-secondary);
+    }
+
+    /* Handle */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: var(--color-secondary);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .mainViewport table.textInfoView > tbody > tr:nth-child(1) > td, .mainViewport table.textInfoView > tbody > tr:nth-child(2) > td, .mainViewport table.textInfoView > tbody > tr .tblOwnStats, .mainViewport table.textInfoView > tbody > tr .tblOwnStats, .mainViewport table.textInfoView > tbody > tr > td .textInfoAuthor, .mainViewport table.textInfoView > tbody > tr > td .textInfoContributor, .mainViewport table.textInfoView > tbody > tr > td .textInfoTitle {
+        background-color: var(--color-secondary);
+        border-color: var(--color-borders);
+    }
+
+
+    .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(1) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(2) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(3) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(4) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(5) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(6) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(7) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(9) > td, .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(4) table tbody tr, .UserGameResultsView .GameResultsChartView > tbody > tr:nth-child(1) > td > div > div > div > div:nth-child(1), .sidebarBlocks iframe, .AnimationSpeedSelector {
+        background-color: var(--color-secondary);
+        border-color: var(--color-borders);
+    }
+
+    .mainViewport table.TypingLogReplayPlayer > tbody > tr:nth-child(3) .lblStatusIndicator, .AnimationSpeedSelector {
+        color: var(--color-font);
+    }
+
+    .themeContent.login .loginform input[type="text"], .themeContent.login .loginform input[type="password"], .themeContent.pit form input[type="text"], .themeContent.login .loginform select, .themeContent.pit form select, .scorecardTable textarea, .messageTable, .messagesList li {
+        background-color: var(--color-secondary);
+        border-color: var(--color-borders);
+        color: var(--color-font);
+    }
+
+    .scoresTable tr th, .friendsTable tr th {
+        background-color: #555;
+        border-color: var(--color-borders);
+        color: var(--color-font);
+    }
+    .scoresTable tr td, .friendsTable tr td {
+        background-color: var(--color-secondary);
+        border-color: var(--color-borders);
+        color: var(--color-font);
+    }
+    .scoresTable tr td:nth-child(1), .friendsTable tr td:nth-child(1) {
+        background-color: #444;
+        border-color: var(--color-borders);
+        color: var(--color-font);
+    }
+
+    .headerSubmenu {
+        filter: grayscale(1)
+    }
+
+    .ElapsedTimeLabel {
+        color: var(--color-accent2) !important;
+        filter: grayscale(0.4)
+    }
+
+    /* Redesign Theme Fixes Only */
+    /* Little more padding for leaderboard */
+    .StatsTable table tr td:nth-child(1) {
+        padding: 0.1em;
+    }
+    /*   Flag Fixes - Competitions   */
+    .scoresTable tr td:nth-child(2) > div, .friendsTable tr td:nth-child(2) > div, .cellTable:not(.queryTable) tr td:nth-child(2) > div {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    /*   Rounded Profile Pictures - Friends   */
+    .userProfilePicLink img {
+        border-radius: 64px;
+    }
+    /*  Wider Profiles    */
+    body > div.ie-fixMinHeight > div > div.container > div.main > div.themeContent.pit > div {
+        width: 130% !important;
+    }
+
+    /* Fix premium/adblock no center issue */
+    #dUI > table > tbody > tr:nth-child(2) > td:nth-child(1) {
+        display: block !important;
+        width: 260px;
+    }
+    
+    /*   Override Redesign   */
+    
+    /*   Accept Text Colors   */
+    .acceptedChars, .statusIndicator, .time, .textInfoAuthor, .textInfoContributor  {
+        color: var(--color-accent) !important;
+    }
+
+
+    a[class*="gwt-Anchor"] {
+     color: var(--color-accent) !important;
+    }
+    a[href*="javascript:void(0);"] {
+     color: var(--color-accent) !important;
+    }
+    a[title*=":)"] {
+     color: var(--color-accent) !important;
+     filter: grayscale(1) brightness(100);
+    }
+    
+    div[class="gwt-HTML"], body.redesigndark .gwt-TabBar .gwt-TabBarItem{
+     color: var(--color-accent) !important;
+    }
+    
+    body > div.DialogBox.PlayerInfoPopup.trPopupDialog > div > div > div.dialogContent > table > tbody > tr:nth-child(1) > td > table > tbody a {
+     color: var(--color-accent) !important;
+    }
+    
+    ::-moz-selection { background: var(--color-accent)}
+    ::selection { background: var(--color-accent)}
+    
+/*      */
+
+    /* Theme Name :: Feel free to change this if you want to customize. :)  */
+    #dUI > table > tbody > tr:nth-child(2) > td:nth-child(3) > div > div.OptionsWidget::after {
+        content: "—————————————————— Lachney's Theme v2.0.0";
+        filter: brightness(40%);
+    }
+}
