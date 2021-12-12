@@ -553,7 +553,7 @@ table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scor
     /* Theme Name :: Feel free to change this if you want to customize. :)  */
     #dUI > table > tbody > tr:nth-child(2) > td:nth-child(3) > div > div.OptionsWidget::after {
         content: '―――――――――――――――― ' var(--customDesc);
-        filter: brightness(40%);
+        color: var(--color-accent) !important;
     }
     
     
