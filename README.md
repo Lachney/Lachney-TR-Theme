@@ -22,17 +22,21 @@ Edit the theme inside of **Stylus**, and at the top are the variables you can ch
 
 ```css
 :root {
-    --main-btn-color: #998290 !important; /* Primary button colors */
-    --color-primary: #111 !important;  /* Primary color */
-    --color-secondary: #222 !important;  /* Secondary color */
-    --color-borders: #333 !important;  /* Border colors */
-    --color-accent: #998290 !important;  /* Accent colors */
-    --color-font: #eee !important;  /* Font colors */
-    --track-font-family: monospace;  /* Style of the font */
-    --track-font-size: 20px; /* Size of the tracks font */
-    --banner: url
-    (https://xjon.me/assets/Louisiana_cypress_tree_header.webp)
-    /* Image on main page */
+    --main-btn-color: #998290;                /* Changes the color of all buttons */
+    --color-primary: #111;                    /* Primary color, changes the background color */
+    --color-secondary: #222;                  /* Secondary color, changes the navbar and containers */
+    --color-borders: #333;                    /* The color of anything that has borders */
+    --color-accent: #998290;                  /* Tthe color of links and titles */
+    --color-font: #eee;                       /* The color of text */
+    --track-font-family: monospace;           /* The font of the text you're typing.| Ex: Comic Sans MS, Arial, Times New Roman */
+    --track-font-size: 20px;                  /* The size of the text you're typing | Ex: 16px, 20px, 26px */
+    --banner: url("https://xjon.me/assets/Louisiana_cypress_tree_header.webp");
+    /* Toggle Features */
+    --featuredUniverses: show;                 /* Options: show | none | Desc: Toggle to display the Featured Universes List */
+    --compactLeaderboards: show;               /* Options: show | none | Desc: Hides profile pictures from leaderboards to make it more compact */
+    --schoolEditionPromo: show;                /* Options: show | none | Desc: Hides the school edition promo */
+    --focusMode: show;                         /* Options: show | none | Desc: Hides all of the cars for you to focus */
+    --customDesc: "Lachney's Theme v2.1.0"     /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
 }
 ```
 
