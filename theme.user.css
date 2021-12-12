@@ -2,7 +2,7 @@
 @name        Lachney's Customizible Theme
 @description Saving you energy and strain on your eyes!
 @namespace   Lachney
-@version     2.0.0
+@version     2.1.0
 @homepageURL https://github.com/Lachney/Lachney-TR-Theme
 @updateURL   https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/css/responsive-dark.user.css
 @license     CC-BY-SA-4.0
@@ -11,27 +11,23 @@
 
 /* Settings */
 
-/* Change the color values to customize */
+/* Customize the colors and apply your own banner image */
 :root {
-    --main-btn-color: #998290 !important;
-    --color-primary: #111 !important;
-    --color-secondary: #222 !important;
-    --color-borders: #333 !important;
-    --color-accent: #998290 !important;
-    --color-font: #eee !important;
-    --track-font-family: monospace;
-    --track-font-size: 20px;
-    --banner: url(https://xjon.me/assets/Louisiana_cypress_tree_header.webp)
-}
-
-/* Hide sidebar universes?  */
-.newEastWidget > .sidebarBlocks {
-    display: none;
-}
-
-/* Hide Featured Universes? */
-.mainViewportHolder > .sidebarBlocks {
-    display: none;
+    --main-btn-color: #998290;              /* Changes the color of all buttons */
+    --color-primary: #111;                  /* Primary color, changes the background color */
+    --color-secondary: #222;                /* Secondary color, changes the navbar and containers */
+    --color-borders: #333;                  /* The color of anything that has borders */
+    --color-accent: #998290;                /* Tthe color of links and titles */
+    --color-font: #eee;                     /* The color of text */
+    --track-font-family: monospace;           /* The font of the text you're typing.| Ex: Comic Sans MS, Arial, Times New Roman */
+    --track-font-size: 20px;                  /* The size of the text you're typing | Ex: 16px, 20px, 26px */
+    --banner: url("https://xjon.me/assets/Louisiana_cypress_tree_header.webp");
+    /* Toggle Features */
+    --featuredUniverses: show;                 /* Options: show | none | Desc: Toggle to display the Featured Universes List */
+    --compactLeaderboards: show;               /* Options: show | none | Desc: Hides profile pictures from leaderboards to make it more compact */
+    --schoolEditionPromo: show;                /* Options: show | none | Desc: Hides the school edition promo */
+    --focusMode: show;                         /* Options: show | none | Desc: Hides all of the cars for you to focus */
+    --customDesc: "Lachney's Theme v2.1.0"     /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
 }
 @-moz-document domain("play.typeracer.com"), domain("data.typeracer.com") {
     /* ubuntu-mono-regular - greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext */
@@ -74,14 +70,13 @@
     }
 
     .enterRace {
-        background-image: var(--banner)!important;
-        background-color: rgba(0, 0, 0, 0.6) !important;
+        background-image: var(--banner) !important;
+        background-color: rgba(0, 0, 0, 0.4) !important;
         background-blend-mode: darken;
-        background-color: var(--color-secondary);
         background-size: cover !important;
         background-position: center !important;
         background-repeat: no-repeat !important;
-        border: var(--color-borders) 1px solid;
+        border: none !important;
         border-radius: 8px;
     }
 
@@ -176,6 +171,7 @@
         border: var(--color-borders) 1px solid;
         border-radius: 8px;
         max-width: 1200px !important;
+        display: var(--schoolEditionPromo) !important;
     }
     
     .popupContent span {
@@ -222,16 +218,15 @@
     table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) {
         width: 200px !important;
     }
-    table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(1) > div img {
-        width: 100%;
-    }
-    .popupContent, .DialogBox, .PlayerInfoPopup, .trPopupDialog, .gwt-MenuBar, .textInfoHeader, .mainViewport table.textInfoView > tbody > tr:nth-child(3) td {
+    .popupContent, .DialogBox, .PlayerInfoPopup, .trPopupDialog, .gwt-MenuBar, .textInfoHeader, .mainViewport table.textInfoView > tbody > tr:nth-child(3) td  {
         background-color: var(--color-secondary) !important;
         color: var(--color-font) !important;
     }
     .textInfoHeader, .mainViewport table.textInfoView {
         border: 1px solid var(--color-borders);
     }
+    
+    
     .gwt-MenuItem:hover {
         background-color: #444 !important;
         transition: all 75ms;
@@ -251,6 +246,29 @@
         color: var(--color-font) !important;
         border: none !important;
     }
+    
+    /*  Race Replay    */
+    .mainViewport table.textInfoView > tbody > tr:nth-child(3) td,
+.textInfoView .textInfoHeader {border:none}
+    
+    .mainViewport .IncrementSpeedChart {
+        filter: invert(100%) grayscale(1);
+        border: none !important;
+    }
+    }
+    
+    .mainViewport div.TypingDisplaySection {
+        background-color: var(--color-secondary) !important;
+        border-color: var(--color-borders) !important;
+    }
+
+    .mainViewport table.TypingLogReplayPlayer>tbody>tr:nth-child(8)>td {
+        background-color: var(--color-secondary) !important;
+        border-color: var(--color-borders) !important;
+}
+
+.lblSectionHeading {color: var(--color-accent) !important}
+
 
     .gwt-InlineLabel {
         color: var(--color-font) !important;
@@ -284,17 +302,25 @@
         border-color: var(--color-borders);
     }
 
+    input {
+      color: var(--text-color) !important;
+    }
+
     /*  Buttons */
     .prompt-button.bkgnd-green, .prompt-button.bkgnd-blue, .prompt-button.bkgnd-yellow, .prompt-button.bkgnd-purple, .highScoresFooter .lnkRefresh, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.My_Scores, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Latest_High_Scores, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Hall_of_Fame, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Competitions, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink, .mainViewport table.textInfoView > tbody > tr .tblOwnStats .ScoreMenuButton > tbody > tr {
         transition: all 175ms;
-        background-color: var(--main-btn-color);
+        background-color: var(--main-btn-color) !important;
         filter: brightness(90%);
         color: #eee !important;
     }
 
-    .prompt-button.bkgnd-green:hover, .prompt-button.bkgnd-blue:hover, .prompt-button.bkgnd-yellow:hover, .prompt-button.bkgnd-purple:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .lnkRefresh:hover, .gwt-TabBarItem>.gwt-Label.My_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Latest_High_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Hall_of_Fame:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Competitions:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .mainViewport table.textInfoView > tbody > tr .tblOwnStats .ScoreMenuButton > tbody > tr:hover {
+    .prompt-button.bkgnd-green:hover, .prompt-button.bkgnd-blue:hover, .prompt-button.bkgnd-yellow:hover, .prompt-button.bkgnd-purple:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .lnkRefresh:hover, .gwt-TabBarItem>.gwt-Label.My_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Latest_High_Scores:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Hall_of_Fame:hover, .statsView .gwt-TabPanel .gwt-TabBar.StatsViewTabs tbody .gwt-TabBarItem-wrapper .gwt-TabBarItem>.gwt-Label.Competitions:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(1) a.gwt-Anchor:hover, .mainViewport table.navControls tr td:nth-child(2) .raceAgainLink:hover, .mainViewport table.textInfoView > tbody > tr .tblOwnStats .ScoreMenuButton > tbody > tr:hover, #lnkChangeTheme {
         background-color: var(--main-btn-color) !important;
         filter: brightness(110%) !important;
+    }
+    
+    table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a {
+        color: var(--color-seconday) !important;
     }
 
     /*  End of Buttons    */
@@ -405,11 +431,12 @@
     .acceptedChars, .statusIndicator, .time, .textInfoAuthor, .textInfoContributor  {
         color: var(--color-accent) !important;
     }
+    
+    .sidebarBlock__title {color: var(--color-accent) !important;}
 
 
     a[class*="gwt-Anchor"] {
      color: var(--color-accent) !important;
-     animation: colorRotate 6s linear 0s infinite;
     }
     a[href*="javascript:void(0);"] {
      color: var(--color-accent) !important;
@@ -426,18 +453,108 @@
     body > div.DialogBox.PlayerInfoPopup.trPopupDialog > div > div > div.dialogContent > table > tbody > tr:nth-child(1) > td > table > tbody a {
      color: var(--color-accent) !important;
     }
+
+    div.DialogBox.trPopupDialog.GameResultInfoPopup > div > div > div.dialogContent > div > div > div > table:nth-child(4) > tbody > tr > td:nth-child(2) > div > div.textInfoAttribution > a {
+    color: var(--color-accent) !important;
+}
+
+.UserGameResultsView .GameResultsChartView>tbody>tr:nth-child(1)>td>div>div>div {
+    border-color: var(--color-accent) !important;
+}
+
+
+.GameResultInfoPopup {
+    background-color: var(--color-primary) !important;
+    width: 100% !important;
+}
+
+.fullTextStr {
+    background-color: var(--color-secondary) !important;
+}
+
+.textInfoHeader {
+    color: var(--color-accent) !important;
+}
+
+.tblOwnStatsNumber {
+    color: var(--color-accent) !important;
+}
+
+.tblOwnStats td {
+    color: var(--color-accent) !important;
+}
+
+.textInfoView .tblOwnStats {
+    color: var(--color-accent) !important;
+}
+
+.userProfileTextLink {
+    color: var(--color-accent) !important;
+}
+
+.home > .pitStop > .pitStop__content a, #appearanceTabLink, #accountTabLink {
+    color: var(--color-accent) !important;
+}
+
+.sectionHeaderRow {
+    color: var(--color-accent) !important;
+}
+
+.DialogBox .signUpForm .sectionHeaderRow, .gwt-PasswordTextBox {
+    border-bottom: 1px solid var(--color-accent) !important;
+}
+
+.DirtyComboBox {
+    background-color: var(--color-secondary) !important;
+    color: var(--text-color) !important;
+}
+
+.gwt-PasswordTextBox {
+    background-color: var(--color-primary) !important;
+}
+
+ .whosHere {
+        border: var(--border-color) !important;
+    }
+
+table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scoresTable a {
+    color: var(--color-accent) !important;
+}
+    
+    /*   Compact Leaderboards   */
+    .userNameLabel > .flag {
+        display: var(--compactLeaderboards) !important;
+    }
+    
+    /*  Featured Universes  */
+    .sidebarBlocks {
+        display: var(--featuredUniverses) !important;
+    }
+    
+    /*  Userbar Support  */
+    
+    .userInfo {
+    background-color: var(--color-primary) !important;
+    }
+
+    .userInfo .userData .userStats .stat {
+    background-color: var(--color-secondary) !important;
+    }
+    
+    /*  Focus Mode    */
+    .scoreboard {display: var(--focusMode)}
+    .countdownPopup, horizontalCountdownPopup {top: 140px !important}
     
     ::-moz-selection { background: var(--color-accent)}
     ::selection { background: var(--color-accent)}
     
-/*      */
+    /*      */
 
     /* Theme Name :: Feel free to change this if you want to customize. :)  */
     #dUI > table > tbody > tr:nth-child(2) > td:nth-child(3) > div > div.OptionsWidget::after {
-        content: "—————————————————— Lachney's Theme v2.0.0";
+        content: '―――――――――――――――― ' var(--customDesc);
         filter: brightness(40%);
     }
     
     
 /*   Extras   */
-}
