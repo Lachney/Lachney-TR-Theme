@@ -12,12 +12,12 @@
 
 /* Settings: Customize the colors and apply your own banner image */
 :root {
-    --main-btn-color: #998290;              /* Changes the color of all buttons */
-    --color-primary: #111;                  /* Primary color, changes the background color */
-    --color-secondary: #222;                /* Secondary color, changes the navbar and containers */
-    --color-borders: #333;                  /* The color of anything that has borders */
-    --color-accent: #998290;                /* Tthe color of links and titles */
-    --color-font: #eee;                     /* The color of text */
+    --main-btn-color: #998290;                /* Changes the color of all buttons */
+    --color-primary: #111;                    /* Primary color, changes the background color */
+    --color-secondary: #222;                  /* Secondary color, changes the navbar and containers */
+    --color-borders: #333;                    /* The color of anything that has borders */
+    --color-accent: #998290;                  /* Tthe color of links and titles */
+    --color-font: #eee;                       /* The color of text */
     --track-font-family: monospace;           /* The font of the text you're typing.| Ex: Comic Sans MS, Arial, Times New Roman */
     --track-font-size: 20px;                  /* The size of the text you're typing | Ex: 16px, 20px, 26px */
     --banner: url("https://xjon.me/assets/Louisiana_cypress_tree_header.webp");
@@ -28,6 +28,8 @@
     --focusMode: show;                         /* Options: show | none | Desc: Hides all of the cars for you to focus */
     --customDesc: "Lachney's Theme v2.1.0"     /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
 }
+
+
 /* ubuntu-mono-regular - greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext */
     @font-face {
         font-family: 'Ubuntu Mono';
@@ -257,7 +259,6 @@
         filter: invert(100%) grayscale(1);
         border: none !important;
     }
-}
 
 .mainViewport div.TypingDisplaySection {
         background-color: var(--color-secondary) !important;
@@ -562,4 +563,4 @@ table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scor
         content: '―――――――――――――――― ' var(--customDesc);
         color: var(--color-accent)
     }
-  }
+}
