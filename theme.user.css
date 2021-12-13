@@ -324,6 +324,10 @@
         color: var(--color-seconday) !important;
     }
 
+  .change-theme-button {
+     background-color: var(--main-btn-color) !important;
+  }
+
     /*  End of Buttons    */
 
     .headerSubmenu {
