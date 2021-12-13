@@ -1,4 +1,4 @@
-![LachneyTheme](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/main.png?raw=true)
+![LachneyTheme](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/animated-preview.gif?raw=true)
 
 <center>
 
