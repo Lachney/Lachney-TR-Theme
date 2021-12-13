@@ -54,6 +54,20 @@ Use a styling extension like Stylus then click the button below to install.
 * [Stylus for Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 * [Stylus for Opera](https://addons.opera.com/en/extensions/details/stylus/)
 
+## Togglable Features
+
+### Compact Leaderboards
+You can made the leaderboards more compact by hiding the profile pictures. change `--compactLeaderboards` to none to have this effect.
+![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/compact-leaderboards.png?raw=true)
+
+### Focus Mode
+Want to play multiplayer but not see any cars? You can toggle `focusMode` to none to have this effect.
+![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/focus-mode.png?raw=true)
+
+### Custom Description
+Just thought it would be a neat little thing. You can write anything here if you want.
+![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/custom-desc.png?raw=true)
+
 #### Issues
 
 If you see something that isn't themed, please feel free to message me on the TypeRacer Discord or [open an issue on the issue tracker](https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/issues) and I will fix it as soon as possible.
