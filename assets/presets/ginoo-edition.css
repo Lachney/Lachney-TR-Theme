@@ -1,0 +1,17 @@
+:root {
+    --main-btn-color: #3b9cb0 !important;            /* Changes the color of all buttons */
+    --color-primary: #0E5B6B !important;             /* Primary color, changes the background color */
+    --color-secondary: #124A54 !important;           /* Secondary color, changes the navbar and containers */
+    --color-borders: #124A54 !important;             /* The color of anything that has borders */
+    --color-accent: #3b9cb0 !important;              /* Tthe color of links and titles */
+    --color-font: #eee !important;                   /* The color of text */
+    --track-font-family: Lato;                       /* The font of the text you're typing.| Ex: Comic Sans MS, Arial, Times New Roman */
+    --track-font-size: 20px;                         /* The size of the text you're typing | Ex: 16px, 20px, 26px */
+    --banner: url('https://cdn.discordapp.com/avatars/389528520201601026/a_07cbc536fd291a980857bb02d90459a6.gif?size=2048');
+    /* Toggle Features */
+    --featuredUniverses: show;                       /* Options: show | none | Desc: Toggle to display the Featured Universes List */
+    --compactLeaderboards: show;                     /* Options: show | none | Desc: Hides profile pictures from leaderboards to make it more compact */
+    --schoolEditionPromo: show;                      /* Options: show | none | Desc: Hides the school edition promo */
+    --focusMode: show;                               /* Options: show | none | Desc: Hides all of the cars for you to focus */
+    --customDesc: "ginoo75's theme"                  /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
+}

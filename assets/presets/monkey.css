@@ -1,0 +1,17 @@
+:root {
+    --main-btn-color: #E2B714 !important;            /* Changes the color of all buttons */
+    --color-primary: #323437 !important;             /* Primary color, changes the background color */
+    --color-secondary: #2b2d2f !important;           /* Secondary color, changes the navbar and containers */
+    --color-borders: #323437 !important;             /* The color of anything that has borders */
+    --color-accent: #808080 !important;              /* Tthe color of links and titles */
+    --color-font: #d1d0d0 !important;                   /* The color of text */
+    --track-font-family: monospace;                       /* The font of the text you're typing.| Ex: Comic Sans MS, Arial, Times New Roman */
+    --track-font-size: 20px;                         /* The size of the text you're typing | Ex: 16px, 20px, 26px */
+    --banner: url('https://i.imgur.com/dNczerm.png');
+    /* Toggle Features */
+    --featuredUniverses: show;                       /* Options: show | none | Desc: Toggle to display the Featured Universes List */
+    --compactLeaderboards: show;                     /* Options: show | none | Desc: Hides profile pictures from leaderboards to make it more compact */
+    --schoolEditionPromo: show;                      /* Options: show | none | Desc: Hides the school edition promo */
+    --focusMode: show;                               /* Options: show | none | Desc: Hides all of the cars for you to focus */
+    --customDesc: ""                  /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
+}
