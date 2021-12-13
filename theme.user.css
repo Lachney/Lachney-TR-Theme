@@ -57,11 +57,11 @@
     h1, h2, h3, h4, h5, li, .gameStatusLabel, .scoreboard, .row, .progressBar, .avatar, .lblName, .lblUsername, .rank {
         color: var(--color-font) !important;
     }
-    
+
     .navigation > a {
-        color: var(--color-font) !important; 
+        color: var(--color-font) !important;
     }
-    
+
     .themeHeader#themeHeader {
         background: var(--color-secondary);
     }
@@ -173,7 +173,7 @@
         max-width: 1200px !important;
         display: var(--schoolEditionPromo) !important;
     }
-    
+
     .popupContent span {
         color: var(--color-font) !important;
     }
@@ -225,8 +225,8 @@
     .textInfoHeader, .mainViewport table.textInfoView {
         border: 1px solid var(--color-borders);
     }
-    
-    
+
+
     .gwt-MenuItem:hover {
         background-color: #444 !important;
         transition: all 75ms;
@@ -246,17 +246,17 @@
         color: var(--color-font) !important;
         border: none !important;
     }
-    
+
     /*  Race Replay    */
     .mainViewport table.textInfoView > tbody > tr:nth-child(3) td,
 .textInfoView .textInfoHeader {border:none}
-    
+
     .mainViewport .IncrementSpeedChart {
         filter: invert(100%) grayscale(1);
         border: none !important;
     }
     }
-    
+
     .mainViewport div.TypingDisplaySection {
         background-color: var(--color-secondary) !important;
         border-color: var(--color-borders) !important;
@@ -285,21 +285,22 @@
     }
 
     .sidebarBlocks, .mainViewportHolder .sidebarBlocks iframe {
-        background-color: var(--color-primary);
+        background-color: var(--color-secondary);
         border-color: var(--color-borders);
     }
     .sidebarBlock show, .sidebarBlock__content, .sidebarBlocks-prev, .sidebarBlocks-next {
-        background: var(--color-secondary) !important;
+        background: var(--color-primary) !important;
         border-color: var(--color-borders);
+        border: none !important;
     }
 
     .sidebarBlock__subtext {
-        background: var(--color-borders) !important;
+        background: var(--color-secondary) !important;
     }
 
     .statsView .tab-bar-select select {
-        background: var(--color-secondary) !important;
-        border-color: var(--color-borders);
+        background: var(--color-primary) !important;
+        border: none !important;
     }
 
     input {
@@ -318,7 +319,7 @@
         background-color: var(--main-btn-color) !important;
         filter: brightness(110%) !important;
     }
-    
+
     table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a {
         color: var(--color-seconday) !important;
     }
@@ -424,14 +425,14 @@
         display: block !important;
         width: 300px;
     }
-    
+
     /*   Override Redesign   */
-    
+
     /*   Accept Text Colors   */
     .acceptedChars, .statusIndicator, .time, .textInfoAuthor, .textInfoContributor  {
         color: var(--color-accent) !important;
     }
-    
+
     .sidebarBlock__title {color: var(--color-accent) !important;}
 
 
@@ -445,11 +446,11 @@
      color: var(--color-accent) !important;
      filter: grayscale(1) brightness(100);
     }
-    
+
     div[class="gwt-HTML"], body.redesigndark .gwt-TabBar .gwt-TabBarItem{
      color: var(--color-accent) !important;
     }
-    
+
     body > div.DialogBox.PlayerInfoPopup.trPopupDialog > div > div > div.dialogContent > table > tbody > tr:nth-child(1) > td > table > tbody a {
      color: var(--color-accent) !important;
     }
@@ -520,19 +521,19 @@
 table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scoresTable a {
     color: var(--color-accent) !important;
 }
-    
+
     /*   Compact Leaderboards   */
     .userNameLabel > .flag {
         display: var(--compactLeaderboards) !important;
     }
-    
+
     /*  Featured Universes  */
     .sidebarBlocks {
         display: var(--featuredUniverses) !important;
     }
-    
+
     /*  Userbar Support  */
-    
+
     .userInfo {
     background-color: var(--color-primary) !important;
     }
@@ -540,14 +541,14 @@ table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scor
     .userInfo .userData .userStats .stat {
     background-color: var(--color-secondary) !important;
     }
-    
+
     /*  Focus Mode    */
     .scoreboard {display: var(--focusMode)}
     .countdownPopup, horizontalCountdownPopup {top: 140px !important}
-    
+
     ::-moz-selection { background: var(--color-accent)}
     ::selection { background: var(--color-accent)}
-    
+
     /*      */
 
     /* Theme Name :: Feel free to change this if you want to customize. :)  */
@@ -555,6 +556,6 @@ table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scor
         content: '―――――――――――――――― ' var(--customDesc);
         color: var(--color-accent) !important;
     }
-    
-    
+
+
 /*   Extras   */
