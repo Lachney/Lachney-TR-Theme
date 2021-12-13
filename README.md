@@ -18,7 +18,7 @@ Head on over the to the [releases section](https://github.com/Lachney-TR-Theme/r
 
 ## Customizing
 
-Edit the theme inside of **Stylus**, and at the top are the variables you can change.
+Edit the theme inside of **Stylus**, and at the top are the variables you can change. If you lack creativity, [you can click here](https://github.com/Lachney/Lachney-TR-Theme/tree/main/assets/presets) to find some presets that I made. Just copy and paste the settings in. Feel free to open a pull request with your own presets and include them there.
 
 ```css
 :root {
@@ -57,14 +57,17 @@ Use a styling extension like Stylus then click the button below to install.
 ## Togglable Features
 
 ### Compact Leaderboards
+
 You can made the leaderboards more compact by hiding the profile pictures. change `--compactLeaderboards` to none to have this effect.
 ![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/compact-leaderboards.png?raw=true)
 
 ### Focus Mode
+
 Want to play multiplayer but not see any cars? You can toggle `focusMode` to none to have this effect.
 ![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/focus-mode.png?raw=true)
 
 ### Custom Description
+
 Just thought it would be a neat little thing. You can write anything here if you want.
 ![compactLeaderboards](https://github.com/Lachney/Lachney-TR-Theme/blob/main/assets/previews/custom-desc.png?raw=true)
 
