@@ -1,17 +1,16 @@
+@-moz-document domain("play.typeracer.com"), domain("data.typeracer.com") {
 /* ==UserStyle==
 @name        Lachney's Customizible Theme
 @description Saving you energy and strain on your eyes!
 @namespace   Lachney
 @version     2.1.0
 @homepageURL https://github.com/Lachney/Lachney-TR-Theme
-@updateURL   https://github.com/Lachney/TypeRacer-Responsive-Dark-Theme/css/responsive-dark.user.css
+@updateURL   https://github.com/Lachney/Lachney-TR-Theme/raw/main/theme.user.css
 @license     CC-BY-SA-4.0
 @author      Lachney
 ==/UserStyle== */
 
-/* Settings */
-
-/* Customize the colors and apply your own banner image */
+/* Settings: Customize the colors and apply your own banner image */
 :root {
     --main-btn-color: #998290;              /* Changes the color of all buttons */
     --color-primary: #111;                  /* Primary color, changes the background color */
@@ -29,8 +28,7 @@
     --focusMode: show;                         /* Options: show | none | Desc: Hides all of the cars for you to focus */
     --customDesc: "Lachney's Theme v2.1.0"     /* Write a custom message to appear in the settings menu. Ex: Follow @TypeRacer on Twitter!*/
 }
-@-moz-document domain("play.typeracer.com"), domain("data.typeracer.com") {
-    /* ubuntu-mono-regular - greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext */
+/* ubuntu-mono-regular - greek-ext_latin_greek_latin-ext_cyrillic_cyrillic-ext */
     @font-face {
         font-family: 'Ubuntu Mono';
         font-style: normal;
@@ -89,9 +87,8 @@
     }
 
     .userNameLabel {
-    color: var(--color-font) !important;
+        color: var(--color-font) !important;
     }
-    
     .mainMenu .practice {
         background-color: var(--color-primary) !important;
         color: var(--color-font) !important;
@@ -260,9 +257,9 @@
         filter: invert(100%) grayscale(1);
         border: none !important;
     }
-    }
+}
 
-    .mainViewport div.TypingDisplaySection {
+.mainViewport div.TypingDisplaySection {
         background-color: var(--color-secondary) !important;
         border-color: var(--color-borders) !important;
     }
@@ -326,12 +323,12 @@
     }
 
     table > tbody > tr:nth-child(4) > td > div > table > tbody > tr:nth-child(2) > td > table > tbody > tr > td:nth-child(2) > table > tbody > tr:nth-child(4) > td > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > table > tbody > tr > td:nth-child(2) > a {
-        color: var(--color-seconday) !important;
+        color: var(--color-secondary) !important;
     }
 
-  .change-theme-button {
-     background-color: var(--main-btn-color) !important;
-  }
+    .change-theme-button {
+       background-color: var(--main-btn-color) !important;
+    }
 
     /*  End of Buttons    */
 
@@ -563,8 +560,6 @@ table.profileDetailsTable > tbody > tr > td > table > tbody > tr > td > a, .scor
     /* Theme Name :: Feel free to change this if you want to customize. :)  */
     #dUI > table > tbody > tr:nth-child(2) > td:nth-child(3) > div > div.OptionsWidget::after {
         content: '―――――――――――――――― ' var(--customDesc);
-        color: var(--color-accent) !important;
+        color: var(--color-accent)
     }
-
-
-/*   Extras   */
+  }
