@@ -87,6 +87,11 @@
     .enterRace h2, h3 {
         color: var(--color-font) !important;
     }
+
+    .userNameLabel {
+    color: var(--color-font) !important;
+    }
+    
     .mainMenu .practice {
         background-color: var(--color-primary) !important;
         color: var(--color-font) !important;
